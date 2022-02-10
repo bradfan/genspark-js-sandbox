@@ -1,4 +1,3 @@
-
 let number = 0;
 const form = document.querySelector("#form");
 
@@ -30,9 +29,7 @@ const mass = document.getElementById("mass");
 form.addEventListener("submit", function(e) {
     e.preventDefault();
     number = document.querySelector("#input").value;
-    console.log(number);
     length.textContent = number + " metres = " +  metersToFeet() + " feet" + " || " + number + " feet = " + feetToMeters() + " metres.";
     volume.textContent = number + " litres = " +  litresToGals() + " gallons" +  " || " + number + " gallons = " + galsToLitres() + " litres.";
     mass.textContent = number + " kilos = " +  kgToPounds() + " pounds" + " || " + number + " pounds = " + poundsToKg() + " kilos.";
 })
-
